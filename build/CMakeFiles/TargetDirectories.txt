@@ -1,3 +1,0 @@
-/Users/salmanahmadgill/server-example/build/CMakeFiles/server_example.dir
-/Users/salmanahmadgill/server-example/build/CMakeFiles/edit_cache.dir
-/Users/salmanahmadgill/server-example/build/CMakeFiles/rebuild_cache.dir
