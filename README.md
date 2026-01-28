@@ -14,15 +14,11 @@
 
     Implemented a sample C++ client to send the request to the REST server which forwards it to the gRPC server by calling the stub
 
-    gRPC server calls the gRPC service in response to the stub which the executes the rpc method implementation.
+    gRPC server calls the gRPC service in response to the stub which the executes the rpc method implementation
 
-    runREST Thread: Executes the function which calls the default main Server class implementation of the virtual function
-
-    handleClient Thread: Executes the logic for the REST server to create the gRPC channel, call the stub and wait for the response
-
-    runGRPC Thread: After runREST thread is detached this thread executes the runGRPC method calling the implemented start() virtual function to
-
-    start the gRPC server and register the service
+1. **runREST Thread**: Executes the function which calls the default main Server class implementation of the virtual function
+7. **handleClient Thread**: Executes the logic for the REST server to create the gRPC channel, call the stub and wait for the response
+10. **runGRPC Thread**: After runREST thread is detached this thread executes the runGRPC method calling the implemented start() virtual function to start the gRPC server and register the service
 
 ### OOP Design:
 
@@ -43,8 +39,7 @@
 1. Make the build directory and cd into it
 
     ```bash
-    	mkdir build
-   	cd build
+    	mkdir buildcd build
 
 2. Generate the CMake confiugrations
 
