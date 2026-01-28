@@ -39,7 +39,7 @@
 1. Make the build directory and cd into it
 
     ```bash
-    	mkdir buildcd build
+    	mkdir build cd build
 
 2. Generate the CMake confiugrations
 
