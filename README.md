@@ -44,9 +44,7 @@
 
     ```bash
     	mkdir build
-
-    ```bash
-   	 cd build
+   	cd build
 
 2. Generate the CMake confiugrations
 
