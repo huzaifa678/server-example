@@ -2,15 +2,15 @@
 
 ## Basic Implementation Of gRPC And REST Server Using C++ Applying It's OOP Concepts To Implement A Simple Multi-Threaded Server Setup
 
-### **REST Server:**
+### REST Server:
 
     Acts as the gateway server calling the stub for the gRPC server to serve the request
 
-### **gRPC Server**:
+### gRPC Server:
 
     Responds to the stub called by the REST server to serve the client
 
-### **Basic Flow**:
+### Basic Flow:
 
     Implemented a sample C++ client to send the request to the REST server which forwards it to the gRPC server by calling the stub
 
@@ -24,7 +24,7 @@
 
     start the gRPC server and register the service
 
-### **OOP Design**:
+### OOP Design:
 
     **Server class**: Parent class which defines the virtual function start() and pure virtual function handleClient() for the gRPC and REST server 
 
@@ -34,9 +34,12 @@
 
     **gRPC Service class**: Implement's the generated protoc functions to execute the response logic
 
-### **Tech Stack**:
+### Tech Stack:
 
 * **C++:** Used for implementing the Servers
+  
 * **gRPC**: Used for RPC client stubs and as a server
+  
 * **Protoc**: Compiler for generating .cc and .h files for the gRPC server to implement and for the REST server to call the stub
+  
 * **CMake:** Used for compiling and building the single executable using the header and cpp files of the servers
