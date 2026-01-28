@@ -43,3 +43,29 @@
 * **Protoc**: Compiler for generating .cc and .h files for the gRPC server to implement and for the REST server to call the stub
   
 * **CMake:** Used for compiling and building the single executable using the header and cpp files of the servers
+
+### Guidelines to start
+
+    1. Make the build directory and cd into it
+
+        ```bash
+    mkdir build
+
+        ```bash
+    cd build
+
+    2. Generate the CMake confiugrations
+
+        ```bash
+    cmake ..
+
+    3. Build the files
+
+        ```bash
+    make
+
+    4. Run the executable
+
+        ```bash
+    ./server-example
+
