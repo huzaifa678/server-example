@@ -27,13 +27,19 @@
 ### OOP Design:
 
 * **Server class**: Parent class which defines the virtual function start() and pure virtual function handleClient() for the gRPC and REST server
+  
 * **gRPC Server class**: Implement's the virtual function to start the server and registers the gRPC service class
+  
 * **REST Server class**: Implement's the virtual function to handle the client request involving creating the gRPC channel and calling the stub
+  
 * **gRPC Service class**: Implement's the generated protoc functions to execute the response logic
 
 ### Tech Stack:
 
 * **C++:** Used for implementing the Servers
+  
 * **gRPC**: Used for RPC client stubs and as a server
+  
 * **Protoc**: Compiler for generating .cc and .h files for the gRPC server to implement and for the REST server to call the stub
+  
 * **CMake:** Used for compiling and building the single executable using the header and cpp files of the servers
