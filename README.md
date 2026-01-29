@@ -17,8 +17,8 @@
     gRPC server calls the gRPC service in response to the stub which the executes the rpc method implementation
 
 1. **runREST Thread**: Executes the function which calls the default main Server class implementation of the virtual function
-7. **handleClient Thread**: Executes the logic for the REST server to create the gRPC channel, call the stub and wait for the response
-10. **runGRPC Thread**: After runREST thread is detached this thread executes the runGRPC method calling the implemented start() virtual function to start the gRPC server and register the service
+2. **handleClient Thread**: Executes the logic for the REST server to create the gRPC channel, call the stub and wait for the response
+3. **runGRPC Thread**: After runREST thread is detached this thread executes the runGRPC method calling the implemented start() virtual function to start the gRPC server and register the service
 
 ### OOP Design:
 
@@ -36,7 +36,7 @@
 
 ### Guidelines to start
 
-1. Make the build directory and cd into it
+1. Make the build directory and cd into it (configure grpc bath based on your machine)
 
     ```bash
     	mkdir build
